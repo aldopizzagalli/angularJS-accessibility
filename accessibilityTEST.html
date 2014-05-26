@@ -1,38 +1,45 @@
 <html ng-app>
 	<head>
+
+	<!-- 
+		Author : Aldo Pizzagalli
+		contact: aldopizzagalli@gmail.com // @aldopizzagalli 
+		Version: 0.0.1
+	 --> 
+
 		<TITLE>Simple Accessible Form in AngularJS</TITLE>
 
 		<script id="angularScript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.8/angular.js"></script>
 		<script>
 
 
-		function controller1($scope) {
-			
-			$scope.first = "";
-			$scope.last = "";
-			$scope.email = "";	
+			function controller1($scope) {
+				
+				$scope.first = "";
+				$scope.last = "";
+				$scope.email = "";	
 
-			$scope.validate = function(){
+				$scope.validate = function(){
 
-				if($scope.first  === ''){
-					$scope.error_firstName = true;		
-				}
-				if($scope.last  === ''){
-					$scope.error_lastName = true;		
-				}
-				if($scope.email  === ''){
-					$scope.error_emailtName = true;		
-				}
+					if($scope.first  === ''){
+						$scope.error_firstName = true;		
+					}
+					if($scope.last  === ''){
+						$scope.error_lastName = true;		
+					}
+					if($scope.email  === ''){
+						$scope.error_emailtName = true;		
+					}
 
 
-				if(!(($scope.last  === '') && ($scope.last  === '') && (scope.email  === ''))){
-					$scope.success = true;
-				}
+					if(!(($scope.last  === '') && ($scope.last  === '') && (scope.email  === ''))){
+						$scope.success = true;
+					}
 
-				return false;
-			
-			};	
-		}	
+					return false;
+				
+				};	
+			}	
 
 		</script>
 	</head>
